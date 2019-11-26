@@ -1,5 +1,6 @@
 from datetime import datetime
-from pitchblog import db
+from __main__ import db
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(25), unique=True, nullable=False)
