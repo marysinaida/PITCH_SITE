@@ -1,5 +1,5 @@
 from flask import render_template,url_for,flash,redirect
-from pitchblog import app
+from pitchblog import app,db,bcrypt
 from  pitchblog.forms import RegistrationForm,LoginForm
 from pitchblog.models import User,Post
 
