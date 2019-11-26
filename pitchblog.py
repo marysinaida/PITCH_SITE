@@ -1,6 +1,7 @@
 from flask import Flask,render_template,url_for,flash,redirect
 from flask_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm,LoginForm
+from models import User,Post
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '86dbd09c12d76f00baa1c4223f8f3862'
